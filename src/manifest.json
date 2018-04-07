@@ -1,0 +1,17 @@
+{
+  "short_name": "NG5-PWA",
+  "name": "My Angular 5 PWA Template",
+  "start_url": "/",
+
+  "theme_color": "#f48c5b",
+  "background_color": "#ffffff",
+
+  "display": "standalone",
+  "orientation": "portrait",
+
+  "icons": [{
+    "src": "/assets/icons/android-chrome-512x512.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }]
+}
