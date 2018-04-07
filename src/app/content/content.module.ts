@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
-
 import { Routes, RouterModule } from '@angular/router';
+import { MaterialUiModule } from '../ui/material-ui.module';
 
 import { UiModule } from '../ui/ui.module';
 import { FeedComponent } from './story/feed/feed.component';
@@ -18,6 +18,7 @@ import { DataService } from '../services/data.service';
         CommonModule,
         UiModule,
         RouterModule,
+        MaterialUiModule,
         AngularFireModule.initializeApp({ databaseURL: 'https://hacker-news.firebaseio.com' }),
         AngularFireDatabaseModule
     ],

@@ -10,6 +10,8 @@ import { environment } from '../environments/environment';
 
 import { UiModule } from './ui/ui.module';
 import { ContentModule } from './content/content.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
     declarations: [
@@ -20,6 +22,8 @@ import { ContentModule } from './content/content.module';
         AppRoutingModule,
         UiModule,
         ContentModule,
+        BrowserAnimationsModule,
+        NgbModule.forRoot(),
         ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production })
     ],
     providers: [],
