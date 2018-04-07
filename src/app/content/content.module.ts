@@ -7,6 +7,10 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { Routes, RouterModule } from '@angular/router';
 
 import { UiModule } from '../ui/ui.module';
+import { FeedComponent } from '../components/story/feed/feed.component';
+import { DetailsComponent } from '../components/story/details/details.component';
+import { ItemComponent } from '../components/story/item/item.component';
+
 import { DataService } from '../services/data.service';
 
 @NgModule({
@@ -18,6 +22,10 @@ import { DataService } from '../services/data.service';
         AngularFireDatabaseModule
     ],
     providers: [DataService],
-    declarations: []
+    declarations: [
+        FeedComponent,
+        DetailsComponent,
+        ItemComponent
+    ]
 })
 export class ContentModule { }
