@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { FeedComponent } from './components/story/feed/feed.component';
-import { DetailsComponent } from './components/story/details/details.component';
+import { FeedComponent } from './content/story/feed/feed.component';
+import { DetailsComponent } from './content/story/details/details.component';
 
 const routes: Routes = [
     { path: '', redirectTo: 'top', pathMatch: 'full' },

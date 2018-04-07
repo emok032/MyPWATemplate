@@ -7,9 +7,9 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { Routes, RouterModule } from '@angular/router';
 
 import { UiModule } from '../ui/ui.module';
-import { FeedComponent } from '../components/story/feed/feed.component';
-import { DetailsComponent } from '../components/story/details/details.component';
-import { ItemComponent } from '../components/story/item/item.component';
+import { FeedComponent } from './story/feed/feed.component';
+import { DetailsComponent } from './story/details/details.component';
+import { ItemComponent } from './story/item/item.component';
 
 import { DataService } from '../services/data.service';
 
