@@ -13,11 +13,23 @@ import { ItemComponent } from './story/item/item.component';
 
 import { DataService } from '../services/data.service';
 
+const routes: Routes = [
+    { path: '', redirectTo: 'top', pathMatch: 'full' },
+    { path: 'top', data: { feed: 'topstories' }, component: FeedComponent },
+    { path: 'new', data: { feed: 'newstories' }, component: FeedComponent },
+    { path: 'ask', data: { feed: 'askstories' }, component: FeedComponent },
+    { path: 'show', data: { feed: 'showstories' }, component: FeedComponent },
+    { path: 'jobs', data: { feed: 'jobstories' }, component: FeedComponent },
+
+    { path: 'item/:id', component: DetailsComponent },
+    // { path: 'user/:id', component: UserDetailComponent },
+];
+
 @NgModule({
     imports: [
         CommonModule,
         UiModule,
-        RouterModule,
+        RouterModule.forChild(routes),
         MaterialUiModule,
         AngularFireModule.initializeApp({ databaseURL: 'https://hacker-news.firebaseio.com' }),
         AngularFireDatabaseModule

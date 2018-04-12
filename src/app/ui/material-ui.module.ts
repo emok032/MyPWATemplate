@@ -1,17 +1,23 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MatButtonModule, MatCheckboxModule } from '@angular/material';
+import { MatMenuModule, MatIconModule, MatTabsModule } from '@angular/material';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
     imports: [
         CommonModule,
-        MatButtonModule,
-        MatCheckboxModule
+        MatMenuModule,
+        MatIconModule,
+        MatTabsModule,
+        NgbModule
     ],
     exports: [
-        MatButtonModule,
-        MatCheckboxModule
+        MatMenuModule,
+        MatIconModule,
+        MatTabsModule,
+        NgbModule
     ],
-    declarations: []
+    declarations: [
+    ]
 })
 export class MaterialUiModule { }

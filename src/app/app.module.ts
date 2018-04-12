@@ -12,6 +12,8 @@ import { UiModule } from './ui/ui.module';
 import { ContentModule } from './content/content.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MenuComponent } from './navigation/menu/menu.component';
+import { NavigationModule } from './navigation/navigation.module';
 
 @NgModule({
     declarations: [
@@ -20,7 +22,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     imports: [
         BrowserModule,
         AppRoutingModule,
-        UiModule,
+        NavigationModule,
         ContentModule,
         BrowserAnimationsModule,
         NgbModule.forRoot(),
